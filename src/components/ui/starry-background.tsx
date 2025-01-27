@@ -1,17 +1,18 @@
 import { useEffect, useState } from "react";
+import { ShootingStar } from "./shooting-star";
 
 const generateStars = (count: number) => {
   const stars = [];
   const colors = [
-    "#FFF", // white
+    "#FFF",    // white
+    "#FFF",    // white
+    "#FFF",    // white
+    "#FFF",    // white
+    "#FFF",    // white
     "#FFD700", // gold
     "#87CEEB", // sky blue
-    "#F0F8FF", // alice blue
-    "#A36AEF", // amethyst
     "#FFC0CB", // pink
-    "#98FB98", // pale green
-    "#DDA0DD", // plum
-    "#ec0b43" // red
+    "#A36AEF"  // amethyst
   ];
   
   // Increase the field size for larger screens
@@ -51,6 +52,7 @@ export const StarryBackground = () => {
       <div className={`absolute w-[3px] h-[3px] bg-transparent animate-animStar ${stars3.animations[0]}`} style={{ boxShadow: stars3.shadows }}>
         <div className="absolute top-[4000px] w-[3px] h-[3px] bg-transparent" style={{ boxShadow: stars3.shadows }} />
       </div>
+      <ShootingStar />
     </div>
   );
 };

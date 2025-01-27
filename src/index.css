@@ -17,6 +17,8 @@
   --animate-rotate1: rotate1 120s linear infinite;
   --animate-rotate2: rotate2 200s linear infinite;
   --animate-rotate3: rotate3 280s linear infinite;
+  --animate-shoot: shoot 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  --animate-radiate: radiate 1.5s ease-in-out;
 
   @keyframes animStar {
     from {
@@ -78,6 +80,24 @@
     }
     to {
       transform: rotate(450deg);
+    }
+  }
+
+  @keyframes shoot {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(150vw);
+    }
+  }
+
+  @keyframes radiate {
+    0%, 100% {
+      filter: drop-shadow(0 0 2px rgba(135, 206, 235, 0.5));
+    }
+    50% {
+      filter: drop-shadow(0 0 8px rgba(135, 206, 235, 0.9));
     }
   }
 }
