@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# 📅 Planit - Smart Task Scheduling Made Simple
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Planit is a minimalist task scheduling application designed to help you efficiently manage and optimize your weekly tasks. With automated scheduling and intuitive controls, Planit makes time management effortless. ✨
 
-Currently, two official plugins are available:
+## ⭐ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🤖 **Smart Task Scheduling**: Automatically generate optimized weekly schedules based on your tasks and availability
+- ✅ **Task Management**: Easily add, edit, and track tasks with customizable duration and priority
+- 🔒 **Time Block Setup**: Define your fixed commitments and let Planit work around them
+- 📊 **Progress Tracking**: Visual indicators to help you stay motivated and on track
+- 🔄 **Calendar Integration**: Sync with Google Calendar and export schedules to PDF/CSV
+- 🛠️ **Manual Adjustments**: Flexibility to fine-tune your schedule as needed
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- 📦 Node.js (v18 or higher)
+- 🔧 npm or yarn
+- 🗄️ MongoDB (for backend)
+- 🔑 Google Calendar API credentials (for calendar sync)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Installation
+
+1️⃣ Clone the repository:
+```bash
+git clone https://github.com/yourusername/planit.git
+cd planit
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2️⃣ Install dependencies:
+```bash
+npm install
 ```
+
+3️⃣ Start the development server:
+```bash
+npm run dev
+```
+
+## 🏗️ Tech Stack
+
+### 🎨 Frontend
+- ⚛️ React with TypeScript
+- 🛣️ React Router for navigation
+- 💅 Styled Components/Tailwind CSS for styling
+
+### ⚙️ Backend
+- 🚀 Node.js & Express
+- 🗃️ MongoDB with Mongoose
+- 🔐 JWT/Passport.js for authentication
+
+### 🔌 Additional Tools
+- 📅 Google Calendar API
+- 📄 PDF/CSV export capabilities

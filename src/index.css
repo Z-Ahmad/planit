@@ -1,11 +1,93 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: #13151A;
+  --color-background-secondary: #1C1F26;
+  --color-background-hover: #252832;
+
+  --color-text-primary: #E8EAF2;
+
+  --color-tekhelet: #512888;
+  --color-amethyst: #8430F2;
+
+  --animate-animStar: animStar 50s linear infinite;
+  --animate-twinkle1: twinkle1 7s ease-in-out infinite;
+  --animate-twinkle2: twinkle2 5s ease-in-out infinite;
+  --animate-twinkle3: twinkle3 9s ease-in-out infinite;
+  --animate-rotate1: rotate1 120s linear infinite;
+  --animate-rotate2: rotate2 200s linear infinite;
+  --animate-rotate3: rotate3 280s linear infinite;
+
+  @keyframes animStar {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }
+
+  @keyframes twinkle1 {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes twinkle2 {
+    0%, 100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.4;
+    }
+  }
+
+  @keyframes twinkle3 {
+    0%, 100% {
+      opacity: 0.9;
+    }
+    65% {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes rotate1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rotate2 {
+    from {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(540deg);
+    }
+  }
+
+  @keyframes rotate3 {
+    from {
+      transform: rotate(90deg);
+    }
+    to {
+      transform: rotate(450deg);
+    }
+  }
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-
+  background-color: var(--color-background);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
