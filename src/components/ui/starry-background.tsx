@@ -11,7 +11,7 @@ const generateStars = (count: number) => {
     "#FFF",    // white
     "#FFD700", // gold
     "#87CEEB", // sky blue
-    "#FFC0CB", // pink
+    "#00FF00", // green
     "#A36AEF"  // amethyst
   ];
   

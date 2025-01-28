@@ -20,15 +20,8 @@ export const ShootingStar = () => {
 
   // Manual trigger with spacebar
   useEffect(() => {
-    const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.code === 'Space') {
-        generateNewStar();
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [generateNewStar]);
+    generateNewStar();
+  }, []);
 
   // Automatic animation
   useEffect(() => {

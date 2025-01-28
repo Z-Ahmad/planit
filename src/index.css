@@ -17,7 +17,7 @@
   --animate-rotate1: rotate1 120s linear infinite;
   --animate-rotate2: rotate2 200s linear infinite;
   --animate-rotate3: rotate3 280s linear infinite;
-  --animate-shoot: shoot 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  --animate-shoot: shoot 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   --animate-radiate: radiate 1.5s ease-in-out;
 
   @keyframes animStar {
@@ -88,7 +88,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(150vw);
+      transform: translateX(120vw);
     }
   }
 
