@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ShootingStar } from "./shooting-star";
 
 const generateStars = (count: number) => {

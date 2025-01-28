@@ -1,12 +1,11 @@
 import './App.css'
+import { Intro } from './components/main/Intro'
 
 function App() {
   return (
-    <div className="relative w-full min-h-screen">
-      <main className="relative z-10 w-full h-full">
-        <h1 className="text-amethyst">Planit</h1>
-      </main>
-    </div>
+    <main className="z-10 w-full min-h-screen flex justify-center items-center">
+      <Intro />
+    </main>
   )
 }
 
