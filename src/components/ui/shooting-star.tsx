@@ -20,7 +20,10 @@ export const ShootingStar = () => {
 
   // Manual trigger with spacebar
   useEffect(() => {
-    generateNewStar();
+    //delay the first star by 1 second
+    setTimeout(() => {
+      generateNewStar();
+    }, 1000);
   }, []);
 
   // Automatic animation

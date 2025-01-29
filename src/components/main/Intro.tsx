@@ -1,16 +1,38 @@
 import { Card } from "./Card";
-
+import {motion} from "motion/react"
 export const Intro = () => {
   return (
     <Card>
       <div className="flex flex-col gap-6 max-w-lg text-center">
         <div className="space-y-2">
           <div className="flex items-center justify-center gap-3">
-            <img src="/logo-small.svg" alt="Planit Logo" className="w-16 h-16 md:w-20 md:h-20" />
+            <motion.img 
+              src="/logo-small.svg" 
+              alt="Planit Logo" 
+              className="w-16 h-16 md:w-20 md:h-20"
+              initial={{ scale: 0.2, rotateY: 180 }}
+              animate={{ 
+                scale: 1, 
+                rotateY: 0,
+                y: [0, -2, 0]
+              }}
+              transition={{ 
+                scale: { duration: 0.5 },
+                rotateY: { duration: 0.5 },
+                y: {
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                },
+                type: "tween",
+                stiffness: 100,
+                damping: 20
+              }}
+            />
             <h1 className="text-4xl font-bold text-royal-purple">Welcome to Planit</h1>
           </div>
           <p className="text-lg text-text-primary/80">
-            Your simple, straightforward planning companion
+            Your easy, <span className="underline">streamlined</span> planning companion
           </p>
         </div>
         
