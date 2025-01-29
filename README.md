@@ -1,4 +1,4 @@
-# 📅 Planit - Smart Task Scheduling Made Simple
+# 🪐 Planit  - Smart Task Scheduling Made Simple
 
 Planit is a minimalist task scheduling application designed to help you efficiently manage and optimize your weekly tasks. With automated scheduling and intuitive controls, Planit makes time management effortless. ✨
 
@@ -43,7 +43,7 @@ npm run dev
 ### 🎨 Frontend
 - ⚛️ React with TypeScript
 - 🛣️ React Router for navigation
-- 💅 Styled Components/Tailwind CSS for styling
+- 💅 Tailwind CSS with DaisyUI for styling
 
 ### ⚙️ Backend
 - 🚀 Node.js & Express
